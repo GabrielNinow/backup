@@ -1,0 +1,296 @@
+body{
+    background: #fff;
+}
+
+#profile-pic {
+    width: 20rem;
+    height: 20rem;
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 2px 2px 1px 1px rgb(53, 53, 53);
+}
+
+.apresentation-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+.image-card{
+    margin: 0 25px;
+    min-width: calc(100% - 50px);
+    box-sizing: border-box;
+
+}
+
+#card-list{
+    padding: 0;
+    transition: ease 1s;
+}
+
+.apresentation {
+    display: flex;
+    flex-direction: row;
+    padding: calc(5rem);
+    gap: 5rem;
+    width: 100%;
+}
+
+@media(max-width: 1366px){
+    .apresentation {
+        display: flex;
+        flex-direction: row;
+        padding:5rem 2rem 2rem 2rem;
+        gap: 5rem;
+        width: 100%;
+    }
+}
+
+.main-content {
+    background-image: url("../src/image/texture.png");
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 80vh;
+}
+
+.main-content > .container{
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content
+
+.container,
+.appointment {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container .content,
+.about-me,
+.service,
+.social-media {
+    margin: 0.5rem 0;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    min-height: 500px;
+    border-radius: 50px;
+    background: var(--background);
+    padding-bottom: 20px;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-card {
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.card-text-content{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card a {
+    color: var(--link);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.5rem;
+    padding-top: 20px;
+}
+
+.card a:hover{
+    color: var(--link-hover);
+}
+
+
+.service .card>img {
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 50px;
+}
+
+.prev, .next{
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 225%;
+}
+
+.prev {
+    left: 50px;
+    visibility: hidden;
+}
+
+.next {
+    right: 50px;
+    visibility: hidden;
+}
+
+.service{
+    width: calc(80% + 50px);
+    overflow: hidden;
+}
+
+.service > ul{
+    justify-content: flex-start;
+}
+
+.more-button img {
+    margin: 0 10px;
+}
+
+.content h1 {
+    margin: 20px 0;
+}
+
+.card h2 {
+    padding-top: 20px;
+}
+
+.appointment {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.appointment a {
+    color: var(--white);
+    font-size: 1.2rem;
+    padding: 16px;
+}
+
+.appointment span {
+    font-family: 'kolker brush';
+    color: var(--grey-black);
+    font-size: 4rem;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.social-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.social-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--background);
+    border-radius: 30px;
+    padding: 1rem 5rem;
+    font-size: 1.5rem;
+    width: 6rem;
+}
+
+.social-card img {
+    width: 7rem;
+    height: 7rem;
+}
+
+@media (max-width: 900px) {
+    .appointment {
+        flex-direction: column-reverse;
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .socials {
+        flex-direction: row;
+    }
+
+    .social-media {
+        width: 80%;
+    }
+
+    .social-group {
+        flex-direction: column;
+    }
+
+    .social-card {
+        width: 50%;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 760px) {
+
+    .apresentation {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 2rem 0;
+        gap: 1rem;
+    }
+
+    .main-content {
+        height: 750px;
+    }
+
+    .apresentation-text {
+        align-items: center;
+        text-align: center;
+    }
+
+    .service{
+        max-width: 100%;
+    }
+
+    #card-list{
+        max-width: 100%;
+    }
+
+    #card-list img{
+        height: 50%;
+    }
+}
+
+@media (max-width: 530px) {
+    .social-card {
+        width: 6rem;
+    }
+}

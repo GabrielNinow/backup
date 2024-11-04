@@ -1,0 +1,114 @@
+:root {
+    --body: #faf9f9;
+
+    --white: #fff;
+    --black: #191919;
+    --grey: #cfcfcf;
+    --dark-grey: #3c3c3c;
+    --almost-white: #f0e9f3;
+
+    --background: #813CB893;
+    --background-darker: #813cb8;
+    --background-lighter: #ae7dd5;
+
+    --primary: #6c28a1;
+    --primary-010: #9060B6;
+
+    --scrollbar: #78608f;
+
+    --secondary: #3DB86C;
+    --secondary-010: #349e5c;
+
+    --link: #003cff;
+    --link-hover:#0025a0;
+
+    --card-background: #c3a1e560;
+    --card-background-secondary: #d4d4d460;
+}
+
+* {
+    font-family: 'roboto', 'lexend', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    box-sizing: border-box;
+    color: var(--black);
+}
+
+body {
+    background: var(--almost-white);
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--dark-grey);
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1,
+h2 {
+    margin: 0;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar);
+    border-radius: 100px;
+    border: 0.1rem solid var(--background);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-010);
+}
+
+.btn {
+    padding: 10px;
+    background: var(--secondary);
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background: var(--secondary-010);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media (max-width: 1200px) {
+    * {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 530px) {
+    * {
+        font-size: 14px;
+    }
+}
